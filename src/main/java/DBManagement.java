@@ -20,8 +20,8 @@ public class DBManagement {
 //            fetchOfAllProducts(connection);
             //updateCustomerName(connection, 496, "MARYIA TEST");
 
-            getCustomers(connection, true);
-//            getCustomers(connection, false);
+//            getCustomers(connection, true);
+            getCustomers(connection, false);
 
             //updateAddress(connection, 496, "This is new comment - Today is Oct 3");
         } catch (Exception e) {
@@ -99,7 +99,7 @@ public class DBManagement {
      */
 
     public static void getCustomers(Connection connection, boolean inputBoolean){
-        String ASC = "CALL getAllCustomersASC;";
+        //String ASC = "CALL getAllCustomersASC;";
 
         if(inputBoolean) {
             try {
